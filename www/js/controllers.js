@@ -14,11 +14,14 @@ app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   var fb_app_id = '1416319645359452';
   var ref = new Firebase("http://giphy.firebaseio.com/");
   var auth = $firebaseAuth(ref);
+  $scope.user = null;
 
   $scope.login = function() {
     $cordovaOauth.facebook(fb_app_id, ["email"]).then(function(result) {
         auth.$authWithOAuthToken("facebook", result.access_token).then(function(authData) {
             console.log(JSON.stringify(authData));
+            $scope.user = authData;
+            $scope.$apply();
         }, function(error) {
             console.error("ERROR: " + error);
         });

@@ -26,3 +26,6 @@ Add splash screen plugin:
 ```
 $ cordova plugin add org.apache.cordova.splashscreen
 ```
+
+
+add `http://localhost/callback` in facebook settings --> "Valid OAuth redirect URIs"
