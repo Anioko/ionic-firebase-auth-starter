@@ -1,0 +1,12 @@
+{
+  "name": "ionic-firebase-auth-starter",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0"
+  },
+  "dependencies": {
+    "ngCordova": "~0.1.17-alpha",
+    "firebase": "~2.2.6",
+    "angularfire": "~1.1.1"
+  }
+}
