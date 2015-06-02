@@ -19,6 +19,8 @@ For android you also must install the sdk:
 ```
 $ brew install android-sdk
 $ android
+$ android list targets
+$ android avd
 ```
 
 Then select the package and install it after agreeing to the license. I got a `Error: Please install Android target: "android-22"`. That's the error installing the packages should get rid of.
@@ -81,6 +83,8 @@ Script tags look like whoa:
 ```
 
 ### Add routes
+
+Ionic uses [angular ui-router](https://github.com/angular-ui/ui-router/wiki)
 
 ```
 // Ionic Starter App
@@ -147,8 +151,6 @@ Create the login template in **www/templates/login.html**. A whole bunch of stuf
         Sign in with facebook
       </button>
     </div>
-
-    {{user}}
   </ion-content>
 </ion-view>
 ```
@@ -188,7 +190,7 @@ This little gem is largely taken from [@nraboy](https://twitter.com/nraboy)'s [b
   <ion-content>
     <h1>Browse</h1>
 
-    <pre>{{user | json}}</pre>
+    <pre{{user | json}}</pre>
   </ion-content>
 </ion-view>
 ```
@@ -210,3 +212,14 @@ Make sure to go to `Settings > Advanced` and add `http://localhost/callback` to 
 ![](/content/images/2015/06/Screen-Shot-2015-06-02-at-10-23-03-AM.png)
 
 Now you have authentication with facebook started for a mobile app. Build something awesome.
+
+Here is the [ionic-firebase-auth-starter](https://github.com/jasonshark/ionic-firebase-auth-starter) code.
+
+<iframe src="https://ghbtns.com/github-btn.html?user=jasonshark&repo=ionic-firebase-auth-starter&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+<iframe src="https://ghbtns.com/github-btn.html?user=jasonshark&repo=ionic-firebase-auth-starter&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+
+
+Questions? Comments? hit me up on [twitter](https://twitter.com/cleechtech)
+
+![](http://media.giphy.com/media/9uBX8yeCP2Lmg/giphy.gif)
